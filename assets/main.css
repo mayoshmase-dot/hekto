@@ -43,3 +43,26 @@ padding-left: 9px;
     background-color: var(--primaryColor);
     padding: 8px 13px;
 }
+
+/* End Header */
+/* Start Footer  */
+footer{
+    background-color: #EEEFFB; 
+    padding: 50px;
+}
+footer .left-side{
+gap: 35px;
+align-items: self-start;
+}
+footer .right-side{
+    width: 60%;
+    gap: 88px;
+    align-items: center;
+}
+footer .footer-item{
+    gap: 45px;
+}
+footer a , .address-info{
+    color:#8A8FB9;
+}
+
