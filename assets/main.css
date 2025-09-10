@@ -1,5 +1,6 @@
 body{
     font-family: var(--mainfont);
+/* start Header */
 }
 header {
     padding: 57px 0;
@@ -46,6 +47,32 @@ padding-left: 9px;
 }
 
 /* End Header */
+/* Start Clients */
+.clients{
+    padding: 50px 0;
+}
+.clients .row {
+    flex-wrap: nowrap;
+    gap: 15px;
+    overflow-x: auto;
+}
+.clients .logo{
+    width: calc( ( 100% - 75px ) / 6 );
+}
+.clients img {
+    width: 150px;
+    height: 150px;
+}
+@media screen and (max-width:900px) {
+    .clients .logo{
+    width: calc( ( 100% - 45px ) / 4 );
+}}
+    @media screen and (max-width:500px) {
+    .clients .logo{
+    width: calc( ( 100% - 15px ) / 2 );
+}
+}
+/* End Clients */
 /* Start Footer  */
 footer{
     background-color: #EEEFFB; 
