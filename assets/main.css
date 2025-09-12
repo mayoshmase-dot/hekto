@@ -47,9 +47,48 @@ padding-left: 9px;
 }
 
 /* End Header */
+
+/* Start Featured-Product */
+.featured-product{
+padding: 50px 0;
+}
+.featured-product h2 {
+    margin-bottom: 30px;
+}
+.featured-product .row {
+    justify-content: flex-start;
+    gap: 15px;
+}
+.featured-product .products{
+    flex: 1 0 300px;
+    box-shadow: 0 4px 4px #00000040;
+    border-radius: 4px;
+}
+.products .image {
+    background-color: #F6F7FB;
+    padding: 30px;
+}
+.products img {
+    width: 200px;
+    height: 200px;
+    object-fit:contain;
+}
+.products-details{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.products-details h3 {
+    color: var(--primaryColor);
+}
+.products-details span{
+    color: #151875;
+}
+/* End Featured-Product */
 /* Start Newslater */
 .newslater{
-    background-image: url('./img/public/Rectangle\ .webp') ;
+    background-image: url('./img/public/Rectangle.webp') ;
     padding: 175px 0;
     text-align: center;
 }
