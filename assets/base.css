@@ -76,7 +76,15 @@ ul {
 .flex-direction {
     flex-direction: column;
 }
-
+.align-center{
+    align-items: center;
+}
+.align-end {
+    align-items: flex-end;
+}
+.align-start{
+    align-items: flex-start;
+}
 .gap-1 {
     gap: 5px;
 }
