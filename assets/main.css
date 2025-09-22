@@ -117,6 +117,7 @@ header ul {
 .featured-product h2 {
     margin-bottom: 30px;
     color: #1A0B5B;
+    font-size: 40px;
 }
 
 .featured-product .row {
@@ -240,6 +241,7 @@ header ul {
 
 .leatest-products h2 {
     color: #151875;
+    font-size: 40px;
 }
 
 .leatest-products a {
@@ -409,6 +411,64 @@ header ul {
 }
 
 /* End Trending Products */
+/* Start Top Categorie */
+.top-categorie {
+    padding: 50px 0;
+}
+
+.top-categorie h2 {
+    color: #151875;
+    font-size: 40px;
+}
+
+.top-categorie .row {
+    justify-content: center;
+    gap: 30px;
+}
+.categorie-img {
+    background-color: #F6F7FB;
+    box-shadow: 0 3px 3px #807e7e40;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    padding: 40px 5px;
+    margin-top: 30px;
+    position: relative;
+    border: 5px solid transparent;
+    transition: all .6s;
+}
+.categorie-img:hover{
+border-color: #9877E7;
+border-top:none transparent;
+border-right: none transparent ;
+}
+
+.but-view {
+    border: none;
+    outline: none;
+    background-color: #08D15F;
+    color: white;
+    width: 85px;
+    height: 25px;
+    font-size: 10px;
+    padding: 8px 16px 10px 13px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 12px;
+    left: 80px;
+    display: none;
+    transition: all .6s;
+}
+
+.categorie-details {
+    margin-top: 10px;
+    color: #151875;
+}
+.categorie :hover .but-view{
+    display: block;
+}
+
+/* End Top Categorie */
 /* Start Newslater */
 .newslater {
     background-image: url('./img/public/Rectangle.webp');
@@ -419,7 +479,7 @@ header ul {
 .newslater h2 {
     margin-bottom: 50px;
     color: #151875;
-    font-size: 35px
+    font-size: 40px
 }
 
 .shop-btn {
@@ -478,12 +538,12 @@ header ul {
 
 .leatest-blog .row {
     justify-content: center;
-    gap: 50px;
+    gap: 15px;
 
 }
 
-.leatest-blog .blog-section {
-    width: 25%;
+ .blog-section {
+    width: calc( ( 100% - 45px ) / 3 );
     box-shadow: 0 4px 4px #00000040;
     border-radius: 4px;
 }
@@ -521,6 +581,16 @@ header ul {
     color: var(--primaryColor);
 }
 
+@media screen and (max-width : 992px) {
+
+   .blog-section {
+    width: calc( ( 100% - 30px ) / 2 );
+   }
+}
+@media screen and (max-width : 576px) {
+   .blog-section {
+    width: 100% ;
+   }}
 /* End leatest-blog */
 /* Start Footer  */
 footer {
