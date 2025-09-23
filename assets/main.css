@@ -161,7 +161,7 @@ header ul {
 .icon-img i {
     color: #1DB4E7;
     display: none;
-    transition: all .6s;
+    transition: all .3s;
 }
 
 .but-img {
@@ -208,7 +208,12 @@ header ul {
 }
 
 .icon-img i:active {
-    color: #2F1AC4;
+    width: 20px;
+    height: 20px;
+   padding: 15px;
+    border-radius: 50%;
+    background-color: #EEEFFB;
+    color: #301BC5;
 }
 
 .products:hover .but-img {
@@ -303,13 +308,21 @@ header ul {
     left: 70px;
     color: #2F1AC4;
     opacity: 0;
-    transition: all .8s;
+    transition: all .2s;
 }
-
+.icon-xm :active {
+    width: 20px;
+    height: 20px;
+   padding: 15px;
+    border-radius: 50%;
+    background-color: #EEEFFB;
+}
 .product:hover .icon-xm {
     opacity: 1;
 }
-
+.product .leatest-img:hover {
+    background-color: #FFFFFF;
+}
 .leatest-img img {
     height: 250px;
     object-fit: contain;
