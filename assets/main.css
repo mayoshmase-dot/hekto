@@ -37,24 +37,25 @@ header ul {
     }
 }
 
-.search form {
+header .search form {
     border: 3px solid #E7E6EF;
     border-radius: 5px;
     display: flex;
+    flex-wrap: wrap;
 }
 
-.search input {
+header .search input {
     border: none;
     outline: none;
-    width: 250px;
+    width: 200px;
     padding-left: 9px;
 }
 
-.search button {
+header .search button {
     border: none;
     outline: none;
     background-color: var(--primaryColor);
-    padding: 8px 13px;
+    padding: 8px 10px;
 }
 
 /* End Header */
@@ -637,54 +638,81 @@ border-right: none transparent ;
    }}
 /* End leatest-blog */
 /* Start Footer  */
-footer {
+.footer {
     background-color: #EEEFFB;
     padding: 50px;
 }
 
-footer .row {
+.footer .row {
     gap: 30px;
 }
+form{
+    display: flex;
+}
+.footer .search form {
+    border: 3px solid rgb(235, 233, 233);
+    border-radius: 5px;
+}
 
-footer a,
+.footer .search input {
+    border: none;
+    outline: none;
+    width: 200px;
+    padding: 8px;
+    padding-left: 9px;
+}
+
+.footer .search button {
+    border: none;
+    outline: none;
+    background-color: var(--primaryColor);
+    padding: 5px;
+}
+.footer a,
 .address-info {
     color: #8A8FB9;
 }
 
-footer .left-side {
+.footer .left-side {
     gap: 35px;
     align-items: flex-start;
-    width: calc ((100% - 35px) / 2);
+    width: calc((100% - 35px) / 2 );
 }
 
-footer .right-side {
-    width: calc ((100% - 35px) / 2);
+.footer .right-side {
+    width: calc((100% - 35px) / 2 );
 }
-
-footer .right-side .row {
+.footer .right-side .row {
     gap: 35px;
     align-items: flex-start;
 }
 
 .footer-item {
     gap: 45px;
-    width: calc ((100% - 35px) / 3);
+    width: calc((100% - 70px) / 3 );
 }
 
-@media screen and (max-width : 992px) {
-
-    footer .left-side,
-    footer .right-side {
+@media screen and (max-width:992px){
+.footer .left-side {
         width: 100%;
     }
+     .footer .right-side{
+        width: 100%;
+     }
 }
 
-@media screen and (max-width : 576px) {
-    footer {
+@media screen and (max-width:576px) {
+    .footer  {
         text-align: center;
     }
 
     .footer-item {
         width: 100%;
+    }
+}
+@media screen and (max-width:377px) {
+    .footer  {
+display: flex;
+align-items: flex-start;
     }
 }
